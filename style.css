@@ -16,6 +16,8 @@ body {
     background-color: #F6F5E8;
     min-height: 100vh;
     color: #222;
+    margin-left: 80px;  /* aligns left side with sticky block */
+    margin-right: 80px;
 }
 
 /* Hide elements with the 'hidden' class */
@@ -23,7 +25,43 @@ body {
     display: none;
 }
 
-/* Style the nav toggle button */
+.sticky-block {
+    position: fixed;
+    left: 80px; /* aligns with h1's left margin */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 60px;
+    background: #883813;
+    border: 2px solid red;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.sticky-word {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #fff;
+    transition: transform 0.3s linear, top 0.3s linear;
+}
+
+.sticky-word.home {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sticky-word.work {
+    top: 150%; /* Start below the block */
+    transform: translate(-50%, -50%);
+}
+
 #nav-toggle {
     background: transparent;
     border: none;
