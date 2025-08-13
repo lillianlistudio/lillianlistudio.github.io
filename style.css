@@ -44,7 +44,7 @@ body {
 .sticky-word {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(270deg);
     font-size: 2rem;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #F6F5E8;
@@ -53,12 +53,12 @@ body {
 
 .sticky-word.home {
     top: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(270deg);
 }
 
 .sticky-word.work {
     top: 150%; /* Start below the block */
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(270deg);
 }
 
 #nav-toggle {
