@@ -33,7 +33,7 @@ body {
     width: 120px;
     height: 60px;
     background: #883813;
-    border-radius: 8px;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
