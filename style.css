@@ -25,30 +25,36 @@ body {
     display: none;
 }
 
-.sticky-block {
+.word-container {
     position: fixed;
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
     width: 184px;
     height: 184px;
-    background: #883813;
-    border-radius: 0;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; /* hides words outside the box */
     z-index: 100;
+}
+
+.word-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .sticky-word {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%) rotate(270deg);
-    font-size: 2rem;
+    font-size: 12.5rem;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #F6F5E8;
     transition: transform 0.3s linear, top 0.3s linear;
+    letter-spacing: 0.05em;
 }
 
 .sticky-word.home {
