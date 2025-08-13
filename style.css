@@ -53,12 +53,12 @@ body {
 
 .sticky-word.home {
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .sticky-word.work {
     top: 150%; /* Start below the block */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 
 #nav-toggle {
