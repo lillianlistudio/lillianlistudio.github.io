@@ -44,7 +44,7 @@ body {
 .sticky-word {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
     font-size: 2rem;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #F6F5E8;
@@ -93,13 +93,21 @@ header h1 {
     letter-spacing: 0.24em;
 }
 
+.home.container {
+    max-width: 1200px;
+    margin-left: calc(184px + 32px); /* sticky block width + gap */
+    margin-right: 80px;               /* page margin */
+    padding-left: 0;
+    padding-right: 0;
+}
+
 header .landing-summary {
     position: absolute;
     right: calc(50% - 640px); /* aligns with right border of 1280px rectangle */
     bottom: calc(100vh - 280px + 48px); /* 48px above rectangle's top */
     color: #883813;
     font-size: 2.5em;
-    text-align: right;
+    text-align: left;
     margin: 0;
     width: max-content;
     white-space: pre-line;
