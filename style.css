@@ -80,7 +80,7 @@ header {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center;   /* Vertically center content */
+    align-items: flex-start;
 }
 
 header h1 {
@@ -89,7 +89,7 @@ header h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #883813;
-    margin: 0 0 0 80px;
+    margin: 32px 0 0 80px;
     text-align: left;
     letter-spacing: 0.24em;
 }
