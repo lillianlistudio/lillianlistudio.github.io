@@ -45,7 +45,7 @@ body {
 .sticky-word {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%, -50%);
     font-size: 2rem;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
