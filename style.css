@@ -33,7 +33,6 @@ body {
     width: 120px;
     height: 60px;
     background: #883813;
-    border: 2px solid red;
     border-radius: 8px;
     display: flex;
     align-items: center;
