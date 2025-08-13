@@ -27,11 +27,11 @@ body {
 
 .sticky-block {
     position: fixed;
-    left: 80px; /* aligns with h1's left margin */
+    left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    width: 120px;
-    height: 60px;
+    width: 184px;
+    height: 184px;
     background: #883813;
     border-radius: 0;
     display: flex;
@@ -44,10 +44,10 @@ body {
 .sticky-word {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translateX(-50%, -50%) rotate(90deg);
     font-size: 2rem;
     font-family: 'Montserrat', Arial, sans-serif;
-    color: #fff;
+    color: #F6F5E8;
     transition: transform 0.3s linear, top 0.3s linear;
 }
 
