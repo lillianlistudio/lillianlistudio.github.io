@@ -93,12 +93,12 @@ header h1 {
     letter-spacing: 0.24em;
 }
 
-header .intro.above-rectangle {
+header .landing-summary {
     position: absolute;
     right: calc(50% - 640px); /* aligns with right border of 1280px rectangle */
     bottom: calc(100vh - 280px + 48px); /* 48px above rectangle's top */
     color: #883813;
-    font-size: 1.625em;
+    font-size: 2.5em;
     text-align: right;
     margin: 0;
     width: max-content;
