@@ -1,0 +1,69 @@
+/* CSS Boilerplate */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+4:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #F6F5E8;
+    min-height: 100vh;
+    color: #222;
+}
+
+/* Hide elements with the 'hidden' class */
+.hidden {
+    display: none;
+}
+
+/* Style the nav toggle button */
+#nav-toggle {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #883813;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0;
+    z-index: 1000;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;   /* Vertically center content */
+}
+
+header h1 {
+    position: static;
+    font-family: 'Source Serif 4', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #883813;
+    margin: 0 0 0 80px;
+    text-align: left;
+    letter-spacing: 0.24em;
+}
+
+header .intro.above-rectangle {
+    position: absolute;
+    right: calc(50% - 640px); /* aligns with right border of 1280px rectangle */
+    bottom: calc(100vh - 280px + 48px); /* 48px above rectangle's top */
+    color: #883813;
+    font-size: 1.625em;
+    text-align: right;
+    margin: 0;
+    width: max-content;
+    white-space: pre-line;
+}
