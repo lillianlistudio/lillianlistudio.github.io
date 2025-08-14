@@ -55,6 +55,7 @@ header, section {
     justify-content: center;
     overflow: hidden; /* hides words outside the box */
     z-index: 100;
+    border: 2px solid red;
 }
 
 .word-scroll {
@@ -65,9 +66,9 @@ header, section {
 
 .sticky-word {
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%) rotate(270deg);
+    transform: translate(-50%, -50%) rotate(270deg);
     font-size: 12.5rem;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
@@ -79,12 +80,12 @@ header, section {
 
 .sticky-word.home {
     top: 50%;
-    transform: translateY(-50%) rotate(270deg);
+    transform: translate(-50%, -50%) rotate(270deg);
 }
 
 .sticky-word.work {
     top: 150%; /* Start below the block */
-    transform: translateY(-50%) rotate(270deg);
+    transform: translate(-50%, -50%) rotate(270deg);
 }
 
 header {
