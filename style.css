@@ -115,21 +115,24 @@ header h1 {
 }
 
 .home-container {
+    position: absolute;
+    top: 50%;
+    left: calc(80px + 142px + 32px);
+    transform: translateY(-50%);
     max-width: 1200px;
-    margin-left: calc(80px + 142px + 32px); /* sticky block width + gap */
-    margin-right: 80px;               /* page margin */
-    padding-left: 0;
-    padding-right: 0;
+    margin-right: 80px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .landing-summary {
-    position: absolute;
-    right: calc(50% - 640px); /* aligns with right border of 1280px rectangle */
-    bottom: calc(100vh - 280px + 48px); /* 48px above rectangle's top */
+    position: static;
     color: #883813;
     font-size: 2.5em;
     text-align: left;
     margin: 0;
-    width: max-content;
+    width: 100%;
     white-space: pre-line;
 }
