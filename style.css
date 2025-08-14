@@ -121,7 +121,6 @@ header h1 {
     top: 50%;
     left: calc(80px + 144px + 32px);
     transform: translateY(-50%);
-    max-width: 1200px;
     margin-right: 80px;
     height: auto;
     display: flex;
