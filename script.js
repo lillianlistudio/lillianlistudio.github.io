@@ -1,16 +1,17 @@
 window.addEventListener('scroll', function() {
-    const scrollArea = document.querySelector('.word-scroll');
-    const words = scrollArea.querySelectorAll('.sticky-word');
-    const scrollY = window.scrollY;
-    const containerHeight = 184; // px, same as .word-container height
-    const wordHeight = 184; // px, same as .word-container height
-    const triggerStart = 0;
-    const triggerEnd = 300; // adjust for scroll distance
+    const worksSection = document.getElementById('works');
+    const wordScroll = document.querySelector('.word-scroll');
+    const homeWord = document.querySelector('.sticky-word.home');
+    const workWord = document.querySelector('.sticky-word.work');
 
-    // Calculate progress (0 to 1)
-    const progress = Math.min(Math.max((scrollY - triggerStart) / (triggerEnd - triggerStart), 0), 1);
+    // Get the position of the works section relative to the viewport
+    const worksTop = worksSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-    // Move "home" up and "work" in
-    words[0].style.top = `${(1 - progress) * containerHeight}px`;
-    words[1].style.top = `${containerHeight + (-progress * containerHeight)}px`;
+    // Calculate progress: 0 when landing, 1 when works section is at top of viewport
+    const progress = Math.min(Math.max(1 - worksTop / windowHeight, 0), 1);
+
+    // Move "HOME" up and out, "WORK" in
+    homeWord.style.top = `${50 - 100 * progress}%`;
+    workWord.style.top = `${150 - 100 * progress}%`;
 });
