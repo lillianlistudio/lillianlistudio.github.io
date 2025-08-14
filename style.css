@@ -67,7 +67,7 @@ header, section {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(-50%, -50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg);
     font-size: 12.5rem;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
@@ -79,12 +79,12 @@ header, section {
 
 .sticky-word.home {
     top: 50%;
-    transform: translate(-50%, -50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg);
 }
 
 .sticky-word.work {
     top: 150%; /* Start below the block */
-    transform: translate(-50%, -50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg);
 }
 
 header {
@@ -133,6 +133,7 @@ header .landing-summary {
     color: #883813;
     font-size: 2.5em;
     text-align: left;
+    letter-spacing: 0.07em;
     margin: 0;
     width: 100%;
     white-space: pre-line;
