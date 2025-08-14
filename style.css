@@ -21,7 +21,7 @@ body {
 }
 
 .site-container {
-    position: relative
+    position: relative;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
