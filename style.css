@@ -18,8 +18,6 @@ body {
     background-color: #C9BD96;
     min-height: 100vh;
     color: #222;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 .main-content {
@@ -107,7 +105,7 @@ header h1 {
 .summary-container {
     position: absolute;
     top: 256px;
-    left: calc(80px + 200px + 80px);
+    left: calc(200px + 80px);
     right: 80px;
     width: auto;
     box-sizing: border-box
