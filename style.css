@@ -20,6 +20,14 @@ body {
     color: #222;
 }
 
+.site-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 header, section {
     width: 100%;
     max-width: 1200px;
@@ -31,8 +39,8 @@ header, section {
 }
 
 .sticky-word-container {
-    position: fixed;
-    left: 80px;
+    position: absolute;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 216px;
