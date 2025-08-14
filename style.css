@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #F6F5E8;
+    background-color: #C9BD96;
     min-height: 100vh;
     color: #222;
     margin-left: 80px;  /* aligns left side with sticky block */
@@ -47,7 +47,7 @@ header, section {
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    width: 144px;
+    width: 148px;
     height: 824px;
     background: transparent;
     display: flex;
@@ -55,7 +55,6 @@ header, section {
     justify-content: center;
     overflow: hidden; /* hides words outside the box */
     z-index: 100;
-    border: 2px solid red;
 }
 
 .word-scroll {
@@ -119,7 +118,7 @@ header h1 {
 .home-container {
     position: absolute;
     top: 50%;
-    left: calc(80px + 144px + 32px);
+    left: calc(80px + 148px + 32px);
     transform: translateY(-50%);
     margin-right: 80px;
     height: auto;
