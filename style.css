@@ -95,11 +95,19 @@ header h1 {
     letter-spacing: 0.24em;
 }
 
-header .landing-summary {
+.summary-container {
+    position: abosolute;
+    top: 256px;
+    left: calc(80px + 190px + 128px);
+    right: 80px;
+    width: auto;
+    max-width: 1200px;
+    box-sizing: border-box
+}
+
+.landing-summary {
     position: static;
-    margin-top: 256px; /* 256px below the top of the viewport */
-    margin-left: calc(80px + 190px + 128px);
-    margin-right: 80px;
+    margin: 0;
     color: #883813;
     font-size: 2.5em;
     text-align: left;
@@ -129,9 +137,15 @@ header .landing-summary {
     header, section {
         max-width: 100%;
     }
-    header .landing-summary {
+    .summary-container {
+        position: static;
+        top: auto;
+        left: 5vw;
+        right: 5vw;
+        max-width: 100%;
         margin-top: 15vh;
-        margin-left: 5vw;
+    }
+    .landing-summary {
         font-size: 1.5em;
     }
 }
