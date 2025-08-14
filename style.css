@@ -47,7 +47,7 @@ header, section {
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    width: 142px;
+    width: 144px;
     height: 824px;
     background: transparent;
     display: flex;
@@ -65,7 +65,8 @@ header, section {
 
 .sticky-word {
     position: absolute;
-    left: 50%;
+    left: 0;
+    top: 50%;
     transform: translate(-50%, -50%) rotate(270deg);
     font-size: 12.5rem;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -117,7 +118,7 @@ header h1 {
 .home-container {
     position: absolute;
     top: 50%;
-    left: calc(80px + 142px + 32px);
+    left: calc(80px + 144px + 32px);
     transform: translateY(-50%);
     max-width: 1200px;
     margin-right: 80px;
@@ -135,4 +136,8 @@ header .landing-summary {
     margin: 0;
     width: 100%;
     white-space: pre-line;
+}
+
+.landing-summary strong {
+    font-weight: 700;
 }
