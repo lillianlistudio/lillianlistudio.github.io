@@ -96,7 +96,7 @@ header h1 {
 }
 
 .summary-container {
-    position: abosolute;
+    position: absolute;
     top: 256px;
     left: calc(80px + 190px + 128px);
     right: 80px;
