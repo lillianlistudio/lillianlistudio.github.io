@@ -128,7 +128,9 @@ header h1 {
 }
 
 header .landing-summary {
-    position: static;
+    position: absolute;
+    top: 256px; /* 256px below the top of the viewport */
+    left: 0;
     color: #883813;
     font-size: 2.5em;
     text-align: left;
