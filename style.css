@@ -18,7 +18,7 @@ body {
     background-color: #C9BD96;
     min-height: 100vh;
     color: #222;
-    margin-left: 80px;  /* aligns left side with sticky block */
+    margin-left: 80px;
     margin-right: 80px;
 }
 
@@ -34,10 +34,10 @@ header, section {
 
 .sticky-word-container {
     position: fixed;
-    left: 80px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 190px;
+    width: 195px;
     height: 1024px;
     background: transparent;
     display: flex;
@@ -98,8 +98,8 @@ header h1 {
 .summary-container {
     position: absolute;
     top: 256px;
-    left: calc(80px + 190px + 128px);
-    right: 80px;
+    left: calc(195px + 128px);
+    right: 0;
     width: auto;
     max-width: 1200px;
     box-sizing: border-box
