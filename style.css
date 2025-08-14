@@ -20,16 +20,6 @@ body {
     color: #222;
 }
 
-.main-content {
-    position: relative;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    box-sizing: border-box;
-}
-
 header, section {
     width: 100%;
     max-width: 1200px;
@@ -45,7 +35,7 @@ header, section {
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
+    width: 216px;
     height: 1024px;
     background: transparent;
     display: flex;
@@ -106,9 +96,11 @@ header h1 {
 .summary-container {
     position: absolute;
     top: 256px;
-    left: calc(200px + 80px);
-    right: 80px;
-    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 843px;
+    right: auto;
+    width: 100%;
     box-sizing: border-box
 }
 
