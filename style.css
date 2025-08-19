@@ -29,112 +29,146 @@ body {
     box-sizing: border-box;
 }
 
-header, section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hidden {
-    display: none;
-}
-
-.sticky-word-container {
-    position: absolute;
+#hero-banner {
+    position: fixed;
+    top: 0;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 216px;
-    height: 1024px;
-    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    background: #222;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    overflow: hidden; /* hides words outside the box */
-    z-index: 100;
+    align-items: center;
+    z-index: 200;
 }
 
-.word-scroll {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.sticky-word {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(270deg);
-    font-size: 17.5rem;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 700;
-    color: #883813;
-    opacity: 0.5;
-    transition: transform 0.3s linear, top 0.3s linear;
-    letter-spacing: 0.05em;
-}
-
-.sticky-word.home {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(270deg);
-}
-
-.sticky-word.work {
-    top: 150%; /* Start below the block */
-    transform: translate(-50%, -50%) rotate(270deg);
-}
-
-header {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-}
-
-header h1 {
-    position: static;
+.banner-title {
     font-family: 'Source Serif 4', serif;
     font-size: 3rem;
     font-weight: 700;
-    color: #883813;
-    margin: 32px 0 0 80px;
-    text-align: left;
     letter-spacing: 0.24em;
+    color: #222;
+    transition: color 1s, transform 1s;
 }
 
-.summary-container {
-    position: absolute;
-    top: 256px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 843px;
-    right: auto;
-    width: 100%;
-    box-sizing: border-box
+#hero-banner.animate .banner-title {
+    color: #745E5E;
+    transform: scale(0.3) translate(600px, -300px);
+    transition: color 1s, transform 1s;
 }
 
-.landing-summary {
-    position: static;
-    margin: 0;
+#hero-banner.hide {
+    display: none;
+}
+
+#fixed-logo {
+    position: fixed;
+    top: 32px;
+    right: 48px;
+    width: 120px;
+    height: auto;
+    z-index: 150;
+    display: none; /* shown after banner animates */
+}
+
+#fixed-logo.show {
+    display: block;
+}
+
+.custom-nav-btn {
+    position: fixed;
+    top: 32px;
+    left: 48px;
+    background: none;
+    border: none;
+    z-index: 150;
+    cursor: pointer;
+    outline: none;
+    /* Add transition for morphing */
+}
+
+.custom-nav-btn svg {
+    width: 48px;
+    height: 48px;
+    transition: all 0.3s;
+}
+
+.custom-nav-btn:hover svg {
+    /* Example: change fill or morph shape */
+    fill: #a259ff;
+}
+
+#main-nav {
+    position: fixed;
+    top: 80px;
+    left: 48px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 24px 32px;
+    z-index: 140;
+    display: none;
+}
+
+#main-nav.show {
+    display: block;
+}
+
+#main-nav ul {
+    list-style: none;
+}
+
+#main-nav li {
+    margin-bottom: 16px;
+}
+
+#main-nav a {
+    font-size: 1.25rem;
     color: #883813;
-    font-size: 2.125em;
-    text-align: left;
-    letter-spacing: 0.07em;
-    width: 100%;
-    white-space: pre-line;
-}
-
-.landing-summary strong {
+    text-decoration: none;
     font-weight: 700;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
 }
 
-.landing-summary em {
-    font-style: italic;
+#main-nav a:hover {
+    color: #a259ff;
 }
 
-.landing-summary a {
+section {
+    max-width: 843px;
+    margin: 0 auto;
+    padding: 96px 0 48px 0;
+}
+
+.professional-summary {
+    font-size: 2.125em;
     color: #883813;
-    text-decoration: underline;
+    letter-spacing: 0.07em;
+    margin-bottom: 64px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.portfolio-item {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 32px;
+    color: #883813;
+    font-weight: 700;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 8px 32px rgba(162,89,255,0.12);
 }
 
 @media (max-width: 800px) {

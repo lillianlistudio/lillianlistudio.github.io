@@ -12,26 +12,69 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="site-container">
-          <div class="sticky-word-container">
-              <div class="word-scroll">
-                <span class="sticky-word home">HOME</span>
-                <span class="sticky-word work">WORK</span>
-              </div>
-          </div>
-          <header>
-              <h1>lillian li</h1>
-              <div class="summary-container">  
-                <p class="landing-summary">Hi, I’m <strong>Lillian Li.</strong><br><br>I’m a <strong>UX & Brand</strong> Designer rooted in architecture. I design bespoke websites and visual identities.<br><br>Helping brands build a meaningful digital presence that tells their story.<br><br><em>Scroll to see my <a href="#work">work.</a></em></p>
-              </div>
-          </header>
-          <section id="work">
-              <h2>Selected Work</h2>
-              <!-- selected works go here -->
-          </section>
-          <section id="contact">
-              <h2>Get in Touch</h2>
-              <p>Have a project in mind? Drop me a line: <a href="mailto:lillianli.studio@gmail.com">
+       <section id="hero-banner">
+        <h1 class="banner-title">lillianli.studio</h1>
+       </section>
+
+    <!-- Fixed Logo (appears after banner animates) -->
+    <div id="fixed-logo" class="hidden">
+        <!-- Inline SVG or img for your logo exported from Figma -->
+        <!-- Example: -->
+        <img src="logo.svg" alt="Lillian Li Logo">
+    </div>
+
+    <!-- Fixed Navigation Button -->
+    <button id="nav-toggle" class="custom-nav-btn">
+        <!-- Inline SVG for custom shape from Figma -->
+        <!-- Example: -->
+        <svg><!-- ...SVG code exported from Figma... --></svg>
+    </button>
+    <nav id="main-nav" class="hidden">
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section (Professional Summary) -->
+    <section id="home">
+        <div class="professional-summary">
+            <p>
+                Hi, I’m <strong>Lillian Li.</strong><br><br>
+                I’m a <strong>UX & Brand Designer</strong> with academic roots in architecture.<br><br>
+                My work is shaped by architectural design thinking methods and a passion for <strong>human connection.</strong><br><br>
+                I design bespoke websites and visual identities that help brands build a meaningful digital presence that tells their story.<br><br>
+                <em>Scroll to see my <a href="#portfolio">portfolio</a>.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <!-- Portfolio items here, each linking to its own HTML page -->
+        <!-- Example: -->
+        <div class="portfolio-grid">
+            <a href="project1.html" class="portfolio-item">Project 1</a>
+            <a href="project2.html" class="portfolio-item">Project 2</a>
+            <!-- ... -->
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story">
+        <h2>My Story</h2>
+        <p><!-- Story content here --></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? <a href="mailto:lillianli.studio@gmail.com">Drop me a line</a></p>
+    </section>
+
+    <script src="script.js"></script>
           <!--- linking Javascript--->
           <script src="script.js"></script>
         </div>
