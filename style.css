@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #C9BD96;
+    background-color: #F6F5E8;
     min-height: 100vh;
     color: #222;
 }
@@ -144,9 +144,15 @@ section {
 
 .professional-summary {
     font-size: 2.125em;
-    color: #883813;
+    color: #000000;
     letter-spacing: 0.07em;
     margin-bottom: 64px;
+}
+
+.professional-summary a {
+    color: #745E5E;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .portfolio-grid {
