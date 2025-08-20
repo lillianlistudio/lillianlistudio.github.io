@@ -15,7 +15,7 @@ body {
 #hero-banner {
     position: fixed;
     top: 0; left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #F6F5E8;
     display: flex;
@@ -93,7 +93,6 @@ body {
     letter-spacing: 0.08em;
     transition: color 0.2s;
 }
-#main-nav a:hover { color: #a259ff; }
 
 /* Main Content Container */
 .site-container {
