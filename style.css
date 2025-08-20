@@ -23,10 +23,11 @@ body {
     align-items: center;
     z-index: 200;
     transition: background 1s;
+    overflow: hidden;
 }
 .banner-title {
     font-family: 'Source Serif 4', serif;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.2em;
     color: #222;
