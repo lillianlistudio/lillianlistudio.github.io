@@ -24,6 +24,7 @@ body {
     z-index: 200;
     transition: background 1s;
     overflow: hidden;
+    border: 5px solid red;
 }
 .banner-title {
     font-family: 'Source Serif 4', serif;
