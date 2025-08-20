@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
             gsap.to("#navPath", {
                 morphSVG: "#navPathHover",
                 duration: 0.5,
-                fill: "#a259ff"
+                fill: "#745E5E",
             });
         });
         navBtn.addEventListener('mouseleave', () => {
