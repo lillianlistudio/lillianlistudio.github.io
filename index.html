@@ -13,66 +13,71 @@
     </head>
     <body>
         <section id="hero-banner">
-          <h1 class="banner-title">lillianli.studio</h1>
+        <h1 class="banner-title">lillianli.studio</h1>
+    </section>
+
+    <!-- Fixed Logo (appears after banner animates) -->
+    <div id="fixed-logo" class="hidden">
+        <img src="logo.svg" alt="Lillian Li Logo">
+    </div>
+
+    <!-- Navigation Container (fixed, right side, vertically centered) -->
+    <div class="nav-container">
+        <button id="nav-toggle" class="custom-nav-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
+                <path id="navPath" d="M41.0785 2.82804C41.0785 ... Z" fill="#745E5E"/>
+                <path id="navPathHover" d="M70.5078 13.5859C71.2888 ... Z" fill="#745E5E" style="display:none"/>
+            </svg>
+        </button>
+        <nav id="main-nav" class="hidden">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="site-container">
+        <!-- Home Section -->
+        <section id="home">
+            <div class="professional-summary">
+                <p>
+                    Hi, I’m <strong>Lillian Li.</strong><br><br>
+                    I’m a <strong>UX & Brand Designer</strong> with academic roots in architecture.<br><br>
+                    My work is shaped by architectural design thinking methods and a passion for <strong>human connection.</strong><br><br>
+                    I design bespoke websites and visual identities that help brands build a meaningful digital presence that tells their story.<br><br>
+                    <em>Scroll to see my <a href="#portfolio">portfolio</a>.</em>
+                </p>
+            </div>
         </section>
 
-        <div class="site-container">
-            <div id="fixed-logo" class="hidden">
-            <img src="logo.svg" alt="Lillian Li Logo">
-            <div id="nav-container">
-                <button id="nav-toggle" class="custom-nav-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
-                    <path id="navPath" d="M41.0785 2.82804C41.0785 1.72352 41.9738 0.828337 43.0783 0.828251C44.1828 0.828342 45.0781 1.72352 45.0781 2.82804L45.0774 36.3376C46.1982 36.6506 47.257 37.2466 48.1385 38.1281C48.9909 38.9806 49.5772 39.9984 49.898 41.0781H83.3281C84.4326 41.0782 85.3279 41.9734 85.3279 43.0779C85.3278 44.1823 84.4326 45.0776 83.3281 45.0777H49.898C49.5772 46.1574 48.9909 47.1752 48.1385 48.0276C47.257 48.9091 46.1982 49.5052 45.0774 49.8182L45.0781 83.3277C45.078 84.4322 44.1827 85.3274 43.0783 85.3275C41.9738 85.3274 41.0786 84.4322 41.0785 83.3277L41.0778 49.7519C40.0395 49.4245 39.0621 48.8507 38.239 48.0276C37.3865 47.1751 36.7989 46.1576 36.4781 45.0777H2.82843C1.7239 45.0777 0.828711 44.1824 0.828641 43.0779C0.828641 41.9733 1.72386 41.0781 2.82843 41.0781H36.4781C36.7989 39.9982 37.3865 38.9807 38.239 38.1281C39.0621 37.3051 40.0395 36.7313 41.0778 36.4039L41.0785 2.82804Z" fill="#745E5E"/>
-                    <path id="navPathHover" d="M70.5078 13.5859C71.2888 12.8049 72.5549 12.805 73.3359 13.5859C74.1169 14.367 74.1169 15.6331 73.3359 16.4141L49.6406 40.1084C50.2118 41.1223 50.5391 42.2924 50.5391 43.5391C50.539 44.7446 50.2339 45.8788 49.6973 46.8691L73.3359 70.5078C74.1169 71.2889 74.1169 72.5549 73.3359 73.3359C72.5549 74.1169 71.2888 74.1168 70.5078 73.3359L46.8691 49.6973C45.8788 50.2339 44.7446 50.539 43.5391 50.5391C42.2924 50.5391 41.1223 50.2118 40.1084 49.6406L16.4141 73.3359C15.633 74.1169 14.367 74.1168 13.5859 73.3359C12.805 72.5549 12.805 71.2888 13.5859 70.5078L37.3271 46.7656C36.8245 45.7999 36.5391 44.7031 36.5391 43.5391C36.5391 42.3334 36.8431 41.1984 37.3799 40.208L13.5859 16.4141C12.8049 15.633 12.805 14.367 13.5859 13.5859C14.367 12.8049 15.633 12.8049 16.4141 13.5859L40.208 37.3799C41.1984 36.8431 42.3334 36.5391 43.5391 36.5391C44.703 36.5391 45.7999 36.8245 46.7656 37.3271L70.5078 13.5859Z" fill="#745E5E" style="display:none"/>
-                  </svg>
-                </button>
-                <nav id="main-nav" class="hidden">
-                    <ul>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#story">Story</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <div class="portfolio-grid">
+                <a href="project1.html" class="portfolio-item">Project 1</a>
+                <a href="project2.html" class="portfolio-item">Project 2</a>
+            </div>
+        </section>
 
-            <!-- Home Section (Professional Summary) -->
-            <section id="home">
-                <div class="professional-summary">
-                    <p>
-                        Hi, I’m <strong>Lillian Li.</strong><br><br>
-                        I’m a <strong>UX & Brand Designer</strong> with academic roots in architecture.<br><br>
-                        My work is shaped by architectural design thinking methods and a passion for <strong>human connection.</strong><br><br>
-                        I design bespoke websites and visual identities that help brands build a meaningful digital presence that tells their story.<br><br>
-                        <em>Scroll to see my <a href="#portfolio">portfolio</a>.</em>
-                    </p>
-                </div>
-            </section>
+        <!-- Story Section -->
+        <section id="story">
+            <h2>My Story</h2>
+            <p><!-- Story content here --></p>
+        </section>
 
-            <!-- Portfolio Section -->
-            <section id="portfolio">
-                <h2>PORTFOLIO</h2>
-                <!-- Portfolio items here, each linking to its own HTML page -->
-                <!-- Example: -->
-                <div class="portfolio-grid">
-                    <a href="project1.html" class="portfolio-item">Project 1</a>
-                    <a href="project2.html" class="portfolio-item">Project 2</a>
-                </div>
-            </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind? <a href="mailto:lillianli.studio@gmail.com">Drop me a line</a></p>
+        </section>
+    </div>
 
-            <!-- Story Section -->
-            <section id="story">
-                <h2>My Story</h2>
-                <p><!-- Story content here --></p>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <h2>Get in Touch</h2>
-                <p>Have a project in mind? <a href="mailto:lillianli.studio@gmail.com">Drop me a line</a></p>
-            </section>
-
-            <script src="script.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-            <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
-        </div>
-    </body>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
