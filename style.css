@@ -26,6 +26,11 @@ body {
 #hero-banner {
     position: fixed;
     inset: 0;
+    width: 100%;   /* force full width */
+    height: 100%;  /* force full height */
+    max-width: none; /* cancel section’s max-width */
+    margin: 0;       /* cancel section’s auto margin */
+    padding: 0;
     background: #F6F5E8;
     display: flex;
     justify-content: center;
