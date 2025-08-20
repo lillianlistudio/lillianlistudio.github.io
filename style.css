@@ -76,27 +76,32 @@ body {
     display: block;
 }
 
-.custom-nav-btn {
+.nav-container {
     position: fixed;
-    top: 32px;
-    left: 48px;
-    background: none;
-    border: none;
-    z-index: 150;
-    cursor: pointer;
-    outline: none;
-    /* Add transition for morphing */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 224px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+    z-index: 160;
+}
+
+#navPathHover {
+    display: none;
+}
+
+.custom-nav-btn {
+    align-self: flex-end;
+    margin-top: auto;
 }
 
 .custom-nav-btn svg {
     width: 86.156px;
     height: 86.156px;
     flex-shrink: 0;
-}
-
-.custom-nav-btn:hover svg {
-    /* Example: change fill or morph shape */
-    fill: #a259ff;
 }
 
 #main-nav {
@@ -133,7 +138,7 @@ body {
 }
 
 #main-nav a:hover {
-    color: #a259ff;
+    color: #000000;
 }
 
 section {
